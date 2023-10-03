@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Kyf</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="benvenuto_in_kyf">Benvenuto in KYF</string>
+    <string name="accedi">Accedi</string>
+    <string name="registrati">Registrati</string>
+    <string name="accedi_al_tuo_account">Accedi al tuo account</string>
+    <string name="utente">Utente</string>
+    <string name="attiva_nutrizionista">Accedi come nutrizionista</string>
+    <string name="inserisci_email">Inserisci email</string>
+    <string name="inserisci_password">Inserisci password</string>
+    <string name="inserisci_nome">Inserisci il tuo nome</string>
+    <string name="inserisci_cognome">Inserisci il tuo cognome</string>
+    <string name="inserisci_data_di_nascita">Data di nascita: YYYY-MM-GG</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="url">http://10.0.2.2:8080/kyf/EntryPointServlet</string>
+    <string name="url_utente">http://10.0.2.2:8080/kyf/UtenteServlet</string>
+    <string name="url_nutrizionista">http://10.0.2.2:8080/kyf/NutrizionistaServlet</string>
+    <string name="shared_preferences">it.uniroma2.pjdm.androidstudio.kyf_preferences</string>
+    <string name="credenziali_errate">Credenziali errate</string>
+    <string name="errore_accesso">Errore di accesso</string>
+    <string name="errore_accesso_sconosciuto">Errore di accesso sconosciuto</string>
+    <string name="registrazione_successo">Registrazione avvenuta con successo</string>
+    <string name="errore_registrazione_richiesta">Richiesta di registrazione non valida</string>
+    <string name="errore_registrazione_sconosciuto">Errore del server</string>
+    <string name="errore_registrazione">Errore sconosciuto\n</string>
+    <string name="errore_registrazione_email">La mail inserita è già utilizzata da un altro account</string>
+    <string name="attiva_nutrizionista_registrazione">Registrati come nutrizionista</string>
+    <string name="nutrizionista_stringa">nutrizionista</string>
+    <string name="utente_stringa">utente</string>
+    <string name="title_activity_main_nutrizionista">MainActivityNutrizionista</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main_utente">MainActivityUtente</string>
+    <string name="nutrizionisti">Nutrizionisti</string>
+    <string name="carboidrati">Carboidrati</string>
+    <string name="proteine">Proteine</string>
+    <string name="grassi">Grassi</string>
+    <string name="calorie">Calorie</string>
+    <string name="aggiungi_alimento_utente">Aggiungi alimento</string>
+    <string name="diario_di_oggi">Diario di oggi</string>
+    <string name="alimento">Alimento</string>
+    <string name="composto">Composto</string>
+    <string name="cerca_alimento">Cerca alimento</string>
+    <string name="errore_del_server">Errore del server</string>
+    <string name="richiesta_malformata">Richiesta al server malformata</string>
+    <string name="categoria_alimenti">alimenti</string>
+    <string name="categoria_alimenti_composti">alimentiComposti</string>
+    <string name="quantita">Quantita</string>
+    <string name="scegli_pasto">Scegli pasto</string>
+    <string name="colazione">Colazione</string>
+    <string name="pranzo">Pranzo</string>
+    <string name="merenda">Merenda</string>
+    <string name="cena">Cena</string>
+    <string name="inserisci_quantita">Inserisci quantita</string>
+    <string name="id_alimento">idAlimento</string>
+    <string name="categoria">categoria</string>
+    <string name="alimento_aggiunto_con_successo">Alimento aggiunto con successo</string>
+    <string name="modifica_quantita">Modifica quantità</string>
+    <string name="elimina_alimento">Elimina</string>
+    <string name="nuova_quantita">Nuova quantità</string>
+    <string name="aggiornamento_avvenuto_con_successo">Aggiornamento avvenuto con successo</string>
+    <string name="pasto">pasto</string>
+    <string name="cerca_altri_nutrizionisti">Cerca altri nutrizionisti</string>
+    <string name="tuoi_nutrizionisti">I tuoi nutrizionisti</string>
+    <string name="descrivi_richiesta">Descrivi la tua richiesta</string>
+    <string name="invia_richiesta">Invia richiesta</string>
+    <string name="pazienti">Pazienti</string>
+    <string name="aggiungi_alimento_composto">Aggiungi alimento composto</string>
+    <string name="connessione_persa">La connessione internet non è presente</string>
+    <string name="grammi_unita_misura">g</string>
+    <string name="email_utente">emailUtente</string>
+    <string name="data">data</string>
+    <string name="colazione_minuscolo">colazione</string>
+    <string name="pranzo_minuscolo">pranzo</string>
+    <string name="merenda_minuscolo">merenda</string>
+    <string name="cena_minuscolo">cena</string>
+    <string name="inserire_nome_alimento_ricerca">Inserire il nome dell\'alimento da cercare</string>
+    <string name="inserire_almeno_un_ingrediente">Inserire almeno un ingrediente</string>
+    <string name="inserire_ingredienti_100_grammi">"Inserire gli ingredienti per una porzione da 100g "</string>
+    <string name="inserire_nome_alimento">Inserire il nome dell\'alimento</string>
+    <string name="compilare_nome_nutrienti">Nome e nutrienti devono essere compilati</string>
+    <string name="inserire_nutrienti_100_grammi">Inserire i nutrienti per una porzione da 100g</string>
+    <string name="email">email</string>
+    <string name="token">token</string>
+    <string name="inserisci_quantita_valida">Inserisci una quantità valida</string>
+    <string name="inserisci_nome_cognome_nutrizionista">Inserire un nome e un cognome da cercare</string>
+    <string name="alimento_duplicato">L\'alimento che si vuole inserire già è presente in quel pasto</string>
+    <string name="utente_gia_paziente">L\'utente già è un suo paziente</string>
+    <string-array name="pasti_array">
+        <item>colazione</item>
+        <item>pranzo</item>
+        <item>merenda</item>
+        <item>cena</item>
+    </string-array>
+
+</resources>

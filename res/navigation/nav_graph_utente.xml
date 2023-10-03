@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_utente"
+    app:startDestination="@id/homeUtenteFragment">
+
+    <fragment
+        android:id="@+id/homeUtenteFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.utente.HomeUtenteFragment"
+        tools:layout="@layout/fragment_home_utente">
+        <action
+            android:id="@+id/action_homeUntenteFragment_to_inserimentoAlimentoFragment"
+            app:destination="@id/inserimentoAlimentoFragment" />
+        <action
+            android:id="@+id/action_homeUtenteFragment_to_ricercaNutrizionistaFragment"
+            app:destination="@id/ricercaNutrizionistaFragment" />
+        <action
+            android:id="@+id/action_homeUtenteFragment_to_modificaQuantitaFragmentDialog"
+            app:destination="@id/modificaQuantitaFragmentDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/inserimentoAlimentoFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.utente.InserimentoAlimentoFragment"
+        tools:layout="@layout/fragment_inserimento_alimento">
+        <action
+            android:id="@+id/action_inserimentoAlimentoFragment_to_raccoltaDatiAlimentoPastoFragment"
+            app:destination="@id/raccoltaDatiAlimentoPastoFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/raccoltaDatiAlimentoPastoFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.utente.home.RaccoltaDatiAlimentoPastoFragment"
+        tools:layout="@layout/fragment_raccolta_dati_alimento_pasto" >
+        <action
+            android:id="@+id/action_raccoltaDatiAlimentoPastoFragment_to_homeUtenteFragment"
+            app:destination="@id/homeUtenteFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/ricercaNutrizionistaFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.utente.ListaNutrizionistiFragment"
+        tools:layout="@layout/fragment_lista_nutrizionisti" >
+        <action
+            android:id="@+id/action_ricercaNutrizionistaFragment_to_inserimentoRichiestaFragmentDialog"
+            app:destination="@id/inserimentoRichiestaFragmentDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/modificaQuantitaFragmentDialog"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.utente.home.ModificaQuantitaFragmentDialog"
+        android:label="fragment_modifica_quantita_dialog"
+        tools:layout="@layout/fragment_modifica_quantita_dialog" >
+        <action
+            android:id="@+id/action_modificaQuantitaFragmentDialog_to_homeUtenteFragment"
+            app:destination="@id/homeUtenteFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/inserimentoRichiestaFragmentDialog"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.utente.home.InserimentoRichiestaFragmentDialog"
+        tools:layout="@layout/fragment_inserimento_richiesta_dialog" >
+        <action
+            android:id="@+id/action_inserimentoRichiestaFragmentDialog_to_homeUtenteFragment"
+            app:destination="@id/homeUtenteFragment" />
+    </fragment>
+</navigation>

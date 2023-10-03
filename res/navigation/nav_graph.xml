@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/entryPointFragment">
+
+    <fragment
+        android:id="@+id/entryPointFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.login.EntryPointFragment"
+        android:label="fragment_entry_point"
+        tools:layout="@layout/fragment_entry_point" >
+        <action
+            android:id="@+id/action_entryPointFragment_to_accessoFragment"
+            app:destination="@id/accessoFragment" />
+        <action
+            android:id="@+id/action_entryPointFragment_to_registrazioneFragment"
+            app:destination="@id/registrazioneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accessoFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.login.AccessoFragment"
+        android:label="fragment_accesso"
+        tools:layout="@layout/fragment_accesso" />
+    <fragment
+        android:id="@+id/registrazioneFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.login.RegistrazioneFragment"
+        android:label="fragment_registrazione"
+        tools:layout="@layout/fragment_registrazione" >
+        <action
+            android:id="@+id/action_registrazioneFragment_to_accessoFragment"
+            app:destination="@id/accessoFragment" />
+    </fragment>
+</navigation>

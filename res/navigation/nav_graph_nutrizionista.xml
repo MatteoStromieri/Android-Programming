@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_nutrizionista"
+    app:startDestination="@id/homeNutrizionistaFragment">
+
+    <fragment
+        android:id="@+id/homeNutrizionistaFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.nutrizionista.HomeNutrizionistaFragment"
+        tools:layout="@layout/fragment_home_nutrizionista">
+        <action
+            android:id="@+id/action_homeNutrizionistaFragment_to_ricercaPazientiFragment"
+            app:destination="@id/ricercaPazientiFragment" />
+        <action
+            android:id="@+id/action_homeNutrizionistaFragment_to_aggiungiAlimentoFragment"
+            app:destination="@id/aggiungiAlimentoFragment" />
+        <action
+            android:id="@+id/action_homeNutrizionistaFragment_to_aggiungiAlimentoCompostoFragment"
+            app:destination="@id/aggiungiAlimentoCompostoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ricercaPazientiFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.nutrizionista.PazientiNutrizionistaFragment"
+        tools:layout="@layout/fragment_ricerca_pazienti" >
+        <action
+            android:id="@+id/action_ricercaPazientiFragment_to_diarioPazienteFragment"
+            app:destination="@id/diarioPazienteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diarioPazienteFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.nutrizionista.home.DiarioPazienteFragment"
+        tools:layout="@layout/fragment_diario_paziente" />
+    <dialog
+        android:id="@+id/aggiungiAlimentoFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.nutrizionista.AggiungiAlimentoFragment"
+        tools:layout="@layout/fragment_aggiungi_alimento" />
+    <fragment
+        android:id="@+id/aggiungiAlimentoCompostoFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.nutrizionista.AggiungiAlimentoCompostoFragment"
+        tools:layout="@layout/fragment_aggiungi_alimento_composto" >
+        <action
+            android:id="@+id/action_aggiungiAlimentoCompostoFragment_to_ricercaIngredienteFragment"
+            app:destination="@id/ricercaIngredienteFragment" />
+        <action
+            android:id="@+id/action_aggiungiAlimentoCompostoFragment_to_homeNutrizionistaFragment"
+            app:destination="@id/homeNutrizionistaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ricercaIngredienteFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.nutrizionista.home.RicercaIngredienteFragment"
+        tools:layout="@layout/fragment_ricerca_ingrediente" >
+        <action
+            android:id="@+id/action_ricercaIngredienteFragment_to_raccoltaQuantitaIngredienteFragment"
+            app:destination="@id/raccoltaQuantitaIngredienteFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/raccoltaQuantitaIngredienteFragment"
+        android:name="it.uniroma2.pjdm.androidstudio.kyf.nutrizionista.home.RaccoltaQuantitaIngredienteFragment"
+        tools:layout="@layout/fragment_raccolta_quantita_ingrediente" >
+        <action
+            android:id="@+id/action_raccoltaQuantitaIngredienteFragment_to_ricercaIngredienteFragment"
+            app:destination="@id/ricercaIngredienteFragment" />
+    </dialog>
+</navigation>
